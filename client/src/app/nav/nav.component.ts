@@ -25,7 +25,7 @@ export class NavComponent implements OnInit {
     this.accountService.login(this.model).subscribe(
      {
       next: _ => this.router.navigateByUrl('/members'),// el _ hace referencia a que no se usara el parametro response
-      error: error=> { this.toastr.error(error.error) }
+      // error: error=> { this.toastr.error(error.error) }
      }
     );
   }
